@@ -102,7 +102,7 @@
                             useremail: this.loginEmail,  
                             password: this.loginPassword
                         }
-                    axios.post("http://127.0.0.1:8000/user/auth/", user_in).then(response=>{
+                    axios.post("https://sportan-api.herokuapp.com/user/auth/", user_in).then(response=>{
                             this.success=response.data.Autenticado;
                             console.log(response);
 
